@@ -7,9 +7,9 @@ import TaskComponent from '../pure/task';
 const TaskListComponent = () => {
 
   const defaultTask = new Task('Example', 'Default Description', false, LEVELS.NORMAL);
-  const changeState = (id) => {
-    console.log('ToDo: Cambiar estado de una Task');
-  }
+  // const changeState = (id) => {
+  //   console.log('ToDo: Cambiar estado de una Task');
+  // }
 
   return (
     <div>
