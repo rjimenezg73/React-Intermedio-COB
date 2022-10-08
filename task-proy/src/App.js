@@ -3,6 +3,7 @@ import './App.css';
 import TaskListComponent from './components/container/task_list.jsx';
 import ComponentA from './components/container/componentA';
 import Ejemplo1 from './hooks/Ejemplo1';
+import Ejemplo2 from './hooks/Ejemplo2';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         {/* <ComponentA></ComponentA> */}
 
         {/* Ejemplo de uso de Hooks */}
-        <Ejemplo1></Ejemplo1>
+        {/* <Ejemplo1></Ejemplo1> */}
+        <Ejemplo2></Ejemplo2>
       </header>
     </div>
   );
