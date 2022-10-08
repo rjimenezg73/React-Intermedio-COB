@@ -47,11 +47,24 @@ const Ejemplo2 = () => {
    * Caso 2: Ejecutar SOLO en algunos caso (Solo cuando cambie contador 1)
    * En caso de que cambie contador2 no ocurrirá nada
    */
-  useEffect(() => {
-    console.log("Cambio en el estado del CONTADOR 1");
+  // useEffect(() => {
+  //   console.log("Cambio en el estado del CONTADOR 1");
+  //   console.log("Mostrando referencia a elemento del DOM:");
+  //   console.log(miRef);
+  // },[contador1]);
+
+  /**
+   * Caso 2: Ejecutar SOLO en algunos caso (Solo cuando cambie contador 1 o contador2)
+   * Cada vez que haya un cambio en contador1, se ejecuta lo que diga useEfect()
+   * Cada vez que haya un cambio en contador2, se ejecuta lo que diga useEfect()
+   * 
+   * En realidad es muy similar al anterior solo que se hace un listado de los casos en los cuales deseamos realizar algun efecto, pueden ser 1, 2, 3 o más...
+   */
+   useEffect(() => {
+    console.log("Cambio en el estado del CONTADOR 1 / CONTADOR 2");
     console.log("Mostrando referencia a elemento del DOM:");
     console.log(miRef);
-  },[contador1]);
+  },[contador1, contador2]);
 
 
   return (
