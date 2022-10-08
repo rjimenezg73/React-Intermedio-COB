@@ -37,12 +37,21 @@ const Ejemplo2 = () => {
    * Cada vez que haya un cambio en el estado del componente se ejecuta aquello que esté
    * dentro del useEffect()
    */
+  // useEffect(() => {
+  //   console.log("Cambio en el estado del componente");
+  //   console.log("Mostrando referencia a elemento del DOM:");
+  //   console.log(miRef);
+  // });
+
+  /**
+   * Caso 2: Ejecutar SOLO en algunos caso (Solo cuando cambie contador 1)
+   * En caso de que cambie contador2 no ocurrirá nada
+   */
   useEffect(() => {
-    console.log("Cambio en el estado del componente");
+    console.log("Cambio en el estado del CONTADOR 1");
     console.log("Mostrando referencia a elemento del DOM:");
     console.log(miRef);
-  });
-
+  },[contador1]);
 
 
   return (
